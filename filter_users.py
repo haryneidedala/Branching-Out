@@ -31,3 +31,6 @@ if __name__ == "__main__":
     else:
         print("Filtering by that option is not yet supported.")
 
+def filter_by_email(data, domain):
+    """Filters users by email domain (e.g., 'example.com')."""
+    return [user for user in data if user['email'].endswith(domain)]
